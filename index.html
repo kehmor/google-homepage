@@ -2,32 +2,44 @@
 <html>
     <head>
         <style>
-     ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  
-}
-li {
-  float: left;
-}
+   
+
 
 a {
   display: block;
   padding: 8px;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+font-size: 13px;
+}
+
+div.navbarleft {
+  position: absolute;
+  top: 10px;
+  height: 32px;
+  vertical-align: middle;
+display: inline-block;
+ }
+
+div.navbarright {
+  position:relative;
+  float:right;
+  height: 32px;
+  line-height: 32px;
+  display: flex;
 }
 div.container {
-  text-align: center;
-  width: 100%;
+  
+  width: 700px;
   height: auto;
   padding-top: 190px;
-
-
+margin: auto;
+text-align: center;
 }
 .search-wrapper {position: relative;
 display: flex;
 width: 700px;
-margin: 0 auto;
+
 }
 .search-icon {position: absolute;
 top: 6px;
@@ -38,18 +50,29 @@ width: 14px;
 width: 100%;
 
 }
+.usericon {
+  border-radius: 50%;
+  height: 32px;
+  width: 32px;
+}
+.menuicon {
+ 
+  height: 32px;
+  width: 32px;
+}
         </style>
     </head>
     <body>
-        <ul>
-            <li><a href="">About</a></li>
-        <li><a href="">Store</a></li>
-        <li style="float:right"><a href=""><img src="images/usericon.png" alt="usericon" width="40" height="40"></a></li>
-        
-        <li style="float:right"><a href=""><img src="images/menuicon.png"  alt="menuicon" width="40" height="40"></a></li>    
-        <li style="float:right"><a href="">Images</a></li>
-        <li style="float:right"><a href="">Gmail</a></li>
-</ul>
+      
+          <p> <a href="">About</a>
+       <a href="">Store</a></p>>
+       <div class="navbarright"> 
+        <a href="">Gmail</a>
+        <a href="">Images</a>
+        <a href=""><img class="menuicon" src="images/menuicon.png"  alt="menuicon" width="40" height="40"></a>   
+        <a href=""><img class="usericon" src="images/usericon.png" alt="usericon" width="40" height="40"></a>
+      </div> 
+
 <div class="container"><img src="images/googlelogo.png">
  <div class="search-wrapper"> 
    <img class="search-icon" src="images/searchicon.png">
