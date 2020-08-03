@@ -2,26 +2,64 @@
 <html>
     <head>
         <style>
-    
+     ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  
+}
+li {
+  float: left;
+}
+
+a {
+  display: block;
+  padding: 8px;
+}
+div.container {
+  text-align: center;
+  width: 100%;
+  height: auto;
+  padding-top: 190px;
+
+
+}
+.search-wrapper {position: relative;
+display: flex;
+width: 700px;
+margin: 0 auto;
+}
+.search-icon {position: absolute;
+top: 6px;
+left: 8px;
+width: 14px;
+}
+.search {
+width: 100%;
+
+}
         </style>
     </head>
     <body>
         <ul>
             <li><a href="">About</a></li>
         <li><a href="">Store</a></li>
-        <li><a href="">Gmail</a></li>
-        <li><a href="">Images</a></li>
-        <li><a href=""><img src="images/menuicon.png"  alt="menuicon" width="40" height="40"></a></li>    
-        <li><a href=""><img src="images/usericon.png" alt="usericon" width="40" height="40"></a></li>
-
+        <li style="float:right"><a href=""><img src="images/usericon.png" alt="usericon" width="40" height="40"></a></li>
+        
+        <li style="float:right"><a href=""><img src="images/menuicon.png"  alt="menuicon" width="40" height="40"></a></li>    
+        <li style="float:right"><a href="">Images</a></li>
+        <li style="float:right"><a href="">Gmail</a></li>
 </ul>
-<img src="images/googlelogo.png"
+<div class="container"><img src="images/googlelogo.png">
+ <div class="search-wrapper"> 
+   <img class="search-icon" src="images/searchicon.png">
     <form action=/search.php>
-<input type="text" name="search">
+<input class="search" type="text" name="search">
+
 <button type="submit">Google Search</button>
 <button type="submit">I'm Feeling Lucky</button>
-    </form>
-    <p><a href="">Resources to help businesses stay connected</a></p>
+    </form></div>
+    <p><a href="">Resources to help businesses stay connected</a></p></div>
     </body>
     
 </html>
