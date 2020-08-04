@@ -102,11 +102,44 @@ background-color: #f8f8f8;
 border: 1px solid #c6c6c6;
 color: #222;}
 .footer {bottom: 0;
-font-size: 10pt;
-height: 35px;
+font-size: 15px;
 position: fixed;
+width: 100%;
+line-height: 20px;
+}
+.country {
+color: rgba(0,0,0,.54);
+padding-left: 27px;
+border-top: 1px solid #e4e4e4;
+border-bottom: 1px solid #e4e4e4;
+background: #f2f2f2;
+font-family: Arial, Helvetica, sans-serif;
+}
+.footerleft {
+display: inline-flex;
+color: rgba(0,0,0,.54);
 
-width: 100%;}
+padding-left: 27px;
+
+}
+div.footerleft a:link {
+  color: rgba(0,0,0,.54);
+  font-size: 15px !important;
+  padding-left: 0px !important;
+  padding-right: 27px !important;
+}
+
+.footerright {
+  display: inline-flex;
+color: rgba(0,0,0,.54);
+padding-right: 27px;
+float:right;
+}
+div.footerright a:link {
+  color: rgba(0,0,0,.54);
+  font-size: 15px !important;
+  padding-left: 27px !important;
+  padding-right: 0px !important;
         </style>
     </head>
     <body>
@@ -133,8 +166,12 @@ width: 100%;}
    </div>
 <div class="footer">
    <div class="country"><p>United Kingdom</p></div>
-   <div class="footerleft"></div>
-   <div class="footerright"></div></div>
+   <div class="footerleft"> <a href="">Advertising</a>
+    <a href="">Business</a>
+    <a href="">How Search works</a></div>
+   <div class="footerright"><a href="">Privacy</a>
+   <a href="">Terms</a>
+   <a href="">Settings</a></div></div>
     </body>
     
 </html>
