@@ -3,7 +3,7 @@
     <head>
         <style>
    
-
+  
 
 a {
   display: block;
@@ -11,7 +11,9 @@ a {
   text-decoration: none;
   font-family: Arial, Helvetica, sans-serif;
 font-size: 13px;
+color: #000000
 }
+a:hover{text-decoration: underline;}
 
 div.navbarleft {
   position: absolute;
@@ -20,7 +22,16 @@ div.navbarleft {
   vertical-align: middle;
 display: inline-block;
  }
-
+div.navbarleft {
+  position: absolute;
+  top: 7px;
+  left: 15px;
+  float: left;
+  height: 32px;
+  line-height: 32px;
+  display: flex;
+  
+}
 div.navbarright {
   position:relative;
   float:right;
@@ -38,17 +49,29 @@ text-align: center;
 }
 .search-wrapper {position: relative;
 display: flex;
-width: 700px;
-
+width: 582px;
+margin-left: auto;
+margin-right: auto;
+margin-top: 20px;
+height: 44px;
+border-radius: 24px;
 }
+.search-wrapper:hover {box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+border-color: rgba(223,225,229,0);}
 .search-icon {position: absolute;
-top: 6px;
-left: 8px;
+top: 17px;
+left: 16px;
 width: 14px;
 }
 .search {
-width: 100%;
-
+width: 582px;
+margin:auto;
+height: 34px;
+border-radius: 24px;
+padding-top: 5px;
+padding-bottom: 5px;
+border: 1px solid #dfe1e5;
+padding-left: 30px;
 }
 .usericon {
   border-radius: 50%;
@@ -60,12 +83,36 @@ width: 100%;
   height: 32px;
   width: 32px;
 }
+.button {background-color: #f2f2f2;
+border: 1px solid #f2f2f2;
+margin: 11px 4px;
+padding: 0 16px;
+font-family: arial,sans-serif;
+font-size: 14px;
+text-align: center;
+cursor: pointer;
+color: #5F6368;
+line-height: 27px;
+height: 36px;
+border-radius: 4px;
+}
+.clickme {padding-top: 18px;}
+.button:hover {box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+background-color: #f8f8f8;
+border: 1px solid #c6c6c6;
+color: #222;}
+.footer {bottom: 0;
+font-size: 10pt;
+height: 35px;
+position: fixed;
+
+width: 100%;}
         </style>
     </head>
     <body>
       
-          <p> <a href="">About</a>
-       <a href="">Store</a></p>>
+         <div class="navbarleft"><a href="">About</a>
+       <a href="">Store</a></div>
        <div class="navbarright"> 
         <a href="">Gmail</a>
         <a href="">Images</a>
@@ -77,12 +124,17 @@ width: 100%;
  <div class="search-wrapper"> 
    <img class="search-icon" src="images/searchicon.png">
     <form action=/search.php>
-<input class="search" type="text" name="search">
-
-<button type="submit">Google Search</button>
-<button type="submit">I'm Feeling Lucky</button>
-    </form></div>
-    <p><a href="">Resources to help businesses stay connected</a></p></div>
+<input class="search" type="text" name="search"></div>
+<div class="clickme">
+<button class="button" type="submit">Google Search</button>
+<button class="button" type="submit">I'm Feeling Lucky</button>
+</div>
+    </form>
+   </div>
+<div class="footer">
+   <div class="country"><p>United Kingdom</p></div>
+   <div class="footerleft"></div>
+   <div class="footerright"></div></div>
     </body>
     
 </html>
